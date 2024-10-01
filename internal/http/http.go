@@ -1,11 +1,12 @@
 package http
 
 import (
-	"kompack-go-api/internal/factory"
-	"kompack-go-api/internal/middleware"
-	"kompack-go-api/pkg/metric"
-	"kompack-go-api/pkg/util"
 	"net/http"
+
+	"github.com/arvinpaundra/dotfile-go/internal/factory"
+	"github.com/arvinpaundra/dotfile-go/internal/middleware"
+	"github.com/arvinpaundra/dotfile-go/pkg/metric"
+	"github.com/arvinpaundra/dotfile-go/pkg/util"
 
 	"github.com/gin-gonic/gin"
 )
@@ -19,7 +20,7 @@ func NewHttp(g *gin.Engine, f *factory.Factory) {
 	g.GET("/", index)
 
 	// metrics route
-	g.GET("/kompack-api-metrics", metric.PrometheusHandler())
+	g.GET("/api-metrics", metric.PrometheusHandler())
 
 	// v1 := g.Group("/api/v1")
 }
@@ -29,7 +30,7 @@ func index(c *gin.Context) {
 		Name    string `json:"name"`
 		Version string `json:"version"`
 	}{
-		Name:    "kompack-go-api",
+		Name:    "dotfile-go",
 		Version: util.LoadVersion(),
 	})
 }

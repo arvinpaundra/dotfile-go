@@ -2,8 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"kompack-go-api/config"
-	"kompack-go-api/pkg/database"
+
+	"github.com/arvinpaundra/dotfile-go/config"
+
+	"github.com/arvinpaundra/dotfile-go/pkg/database"
 
 	"github.com/spf13/cobra"
 	"golang.org/x/text/cases"

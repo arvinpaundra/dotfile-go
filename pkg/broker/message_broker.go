@@ -1,9 +1,10 @@
 package broker
 
 import (
-	"kompack-go-api/config"
 	"log"
 	"sync"
+
+	config "github.com/arvinpaundra/dotfile-go/config"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 )

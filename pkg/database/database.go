@@ -1,9 +1,10 @@
 package database
 
 import (
-	"kompack-go-api/config"
 	"log"
 	"sync"
+
+	config "github.com/arvinpaundra/dotfile-go/config"
 
 	"gorm.io/gorm"
 )

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"kompack-go-api/cmd"
+	cmd "github.com/arvinpaundra/dotfile-go/cmd"
 )
 
 func main() {

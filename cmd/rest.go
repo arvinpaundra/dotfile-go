@@ -2,15 +2,16 @@ package cmd
 
 import (
 	"context"
-	"kompack-go-api/config"
-	"kompack-go-api/internal/factory"
-	cHttp "kompack-go-api/internal/http"
-	"kompack-go-api/pkg/database"
-	"kompack-go-api/pkg/tracer"
-	"kompack-go-api/pkg/util"
 	"log"
 	"net/http"
 	"time"
+
+	config "github.com/arvinpaundra/dotfile-go/config"
+	"github.com/arvinpaundra/dotfile-go/internal/factory"
+	cHttp "github.com/arvinpaundra/dotfile-go/internal/http"
+	"github.com/arvinpaundra/dotfile-go/pkg/database"
+	"github.com/arvinpaundra/dotfile-go/pkg/tracer"
+	"github.com/arvinpaundra/dotfile-go/pkg/util"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"

@@ -4,11 +4,12 @@ import (
 	"context"
 	"fmt"
 	"io"
-	"kompack-go-api/config"
-	"kompack-go-api/pkg/util"
 	path "path/filepath"
 	"strings"
 	"time"
+
+	config "github.com/arvinpaundra/dotfile-go/config"
+	"github.com/arvinpaundra/dotfile-go/pkg/util"
 
 	"cloud.google.com/go/storage"
 	"google.golang.org/api/option"

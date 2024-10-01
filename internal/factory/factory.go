@@ -1,9 +1,9 @@
 package factory
 
 import (
-	"kompack-go-api/internal/repository"
-	"kompack-go-api/pkg/database"
-	"kompack-go-api/pkg/tracer"
+	"github.com/arvinpaundra/dotfile-go/internal/repository"
+	"github.com/arvinpaundra/dotfile-go/pkg/database"
+	"github.com/arvinpaundra/dotfile-go/pkg/tracer"
 
 	"go.uber.org/zap"
 )

@@ -1,4 +1,4 @@
-module kompack-go-api
+module github.com/arvinpaundra/dotfile-go
 
 go 1.20
 

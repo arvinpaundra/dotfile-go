@@ -1,10 +1,10 @@
 package tracer
 
 import (
+	config "github.com/arvinpaundra/dotfile-go/config"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"kompack-go-api/config"
 )
 
 var (
